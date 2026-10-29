@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dunia Makanan</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
+  body{background:#fff8f0;color:#2d2d2d}
+  header{
+    background:linear-gradient(135deg,#ff6b35,#ff9a3d);
+    color:white;text-align:center;padding:50px 20px 40px;
+    border-radius:0 0 30px 30px;
+  }
+  header h1{font-size:42px;letter-spacing:1px}
+  header p{margin-top:10px;font-size:17px;opacity:.95}
+  .search{
+    max-width:500px;margin:20px auto 0;background:white;
+    display:flex;border-radius:50px;overflow:hidden;padding:5px;
+  }
+  .search input{flex:1;border:none;outline:none;padding:12px 18px;font-size:15px}
+  .search button{background:#ff6b35;color:white;border:none;padding:12px 20px;border-radius:50px;cursor:pointer;font-weight:bold}
+  .container{max-width:1000px;margin:0 auto;padding:25px 16px 60px}
+  h2{margin:30px 0 15px;font-size:24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.08);transition:.2s}
+  .card:hover{transform:translateY(-5px)}
+  .card img{width:100%;height:150px;object-fit:cover}
+  .card-body{padding:15px}
+  .card-body h3{font-size:18px;margin-bottom:5px}
+  .card-body p{font-size:14px;color:#777;line-height:1.5}
+  .tag{display:inline-block;background:#ffe8d9;color:#ff6b35;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:bold;margin-top:10px}
+  .banner{
+    margin-top:35px;background:#2d2d2d;color:white;
+    padding:30px 20px;border-radius:20px;text-align:center;
+  }
+  .banner h2{margin:0 0 10px}
+  .banner a{display:inline-block;margin-top:15px;background:#ff6b35;color:white;text-decoration:none;padding:12px 25px;border-radius:50px;font-weight:bold}
+  footer{text-align:center;padding:20px;color:#999;font-size:13px}
+</style>
+</head>
+<body>
+
+<header>
+  <div style="font-size:40px">🍔🍜🍕</div>
+  <h1>Dunia Makanan</h1>
+  <p>Jelajah rasa dari seluruh dunia — dari Miri sampai ke Tokyo!</p>
+  <div class="search">
+    <input type="text" placeholder="Cari nasi lemak, ramen, burger...">
+    <button>Cari</button>
+  </div>
+</header>
+
+<div class="container">
+  <h2>🔥 Popular Hari Ni</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="Makanan">
+      <div class="card-body">
+        <h3>Nasi Lemak Special</h3>
+        <p>Nasi wangi, sambal pedas, ayam goreng rangup. Legenda Malaysia!</p>
+        <span class="tag">🇲🇾 Malaysia</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=600" alt="Ramen">
+      <div class="card-body">
+        <h3>Ramen Tokyo</h3>
+        <p>Kuah pekat 12 jam, telur separuh masak, mie kenyal.</p>
+        <span class="tag">🇯🇵 Jepun</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Burger">
+      <div class="card-body">
+        <h3>Burger Cheese Leleh</h3>
+        <p>Daging juicy, cheese melimpah, roti bakar butter.</p>
+        <span class="tag">🇺🇸 Western</span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600" alt="Nasi Goreng">
+      <div class="card-body">
+        <h3>Nasi Goreng Kampung</h3>
+        <p>Pedas, wangi kuali, telur mata + ikan bilis rangup.</p>
+        <span class="tag">🇮🇩 Indonesia</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+    <h2>Lapar? Jom Makan!</h2>
+    <p>Share website ni dengan kawan-kawan yang suka makan.</p>
+    <a href="#">Lihat Semua Menu →</a>
+  </div>
+</div>
+
+<footer>© 2026 Dunia Makanan | Dibuat dengan ❤️</footer>
+
+</body>
+</html>
